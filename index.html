@@ -2,11 +2,197 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Девайс</title>
   </head>
   <body>
+    <header class="page-header">
+    <a class="logo-device-link" href="#"> <img class="logo-device" src="#" alt="Логотип Девайс."></a>
+    <form class="search">
+      <img class="search-icon" src="#">
+      <input class="field"  placeholder="Текст поиска" type="search">
+      <button class="search" type="submit">Найти</button>
+  </form>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+ <ul class="custom menu">
+    <li class="navigation-item">
+      <button class="login-user">
+        <img class="user-icon" src="#">
+      </button>
+    </li>
+
+    <li class="navigation-item">
+      <button class="compare-button">
+        <img class="compare-icon" src="#">
+        <span class="compare">Сравнить</span>
+      </button>
+    </li>
+
+    <li class="navigation-item">
+      <button class="cart-button">
+        <img class="cart-icon" src="#">
+        <span class="compare">Корзина</span>
+      </button>
+    </li>
+    </ul>
+
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Каталог товаров</a>
+        <img class="catalog-icon" src="#">
+        <ul class="catalog-categories-list">
+          <li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Виртуальная реальность</a>
+          </li>
+          <li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Фитнес-браслеты</a>
+          </li><li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Квадрокоптеры</a>
+          </li><li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Моноподы для селфи</a>
+          </li><li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Умные часы</a>
+          </li><li class="catalog-categories-item">
+            <a class="catalog-categories-link" href="#"><img class="">Экшн-камеры</a>
+          </li>
+        </ul>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Доставка</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Гарантии</a>
+      </li>
+      <li class="navigation-item">
+        <a class="navigation-link" href="#">Контакты</a>
+      </li>
+    </ul>
+
+</nav>
+    </header>
+    <main class="main-index">
+      <img>
+      <h1 class="heading">Порхает как бабочка, жалит как пчела!</h1>
+      <p class="subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+      </p>
+      <a class="button button-more" href="#">Подробнее</a>
+      <span class="specifications">
+        <ul class="">
+          <li class="">Дальность полета 800м</li>
+          <li class="">Радиус поражения 50м</li>
+        </ul>
+      </span>
+
+      <ul class="catalog-categories-list">
+        <li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Виртуальная реальность</a>
+        </li>
+        <li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Моноподы для селфи</a>
+        </li><li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Экшн-камеры</a>
+        </li><li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Фитнес-браслеты</a>
+        </li><li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Умные часы</a>
+        </li><li class="catalog-categories-item">
+          <a class="catalog-categories-link" href="#"><img class="">Квадрокоптеры</a>
+        </li>
+      </ul>
+
+      <div class="tabs">
+        <button class="tablinks" type="submit">Доставка</button>
+        <button class="tablinks" type="submit">Гарантия</button>
+        <button class="tablinks" type="submit">Кредит</button>
+      </div>
+      <div id="Доставка" class="tabcontent-current">
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </div>
+      <div id="Гарантия" class="tabcontent">
+        <h2>Гарантия</h2>
+        <p></p>
+      </div>
+      <div id="Кредит" class="tabcontent">
+        <h2>Кредит</h2>
+        <p></p>
+      </div>
+
+      <button class="modal" type="submit">Доставим редкий товар под заказ</button>
+
+      <section class="about-text">
+        <h2 class="appointment-title">О нас</h2>
+        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <ul class="delivery-list">
+          <li class="delivery-item">
+            <a class="delivery-link" href="#">Меловые линии</a>
+            <li class="delivery-item">
+              <a class="delivery-link" href="#">СДИК</a>
+            <li class="delivery-item">
+              <a class="delivery-link" href="#">ТоксБерри</a>
+          </li>
+        </ul>
+
+        <button class="button" type="submit">Подробнее о нас</button>
+
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts">Вы можете забрать товар сами, заехав в наш офис.
+          Заодно сможете проверить работоспособность покупки. </p>
+        <h2 class="contacts-subtitle">Интернет-магазин «Девайс»</h2>
+        <p class="contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="contacts-phone">+7 812 812-12-12</p>
+        <h2 class="contacts-subtitle">Время работы</h2>
+        <p class="contacts">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
+
+        <button class="button" type="submit">Напишите нам</button>
+      </section>
+
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter-email">Email</label>
+        <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="button newsletter-button" type="submit">
+          <span class="newsletter">Подписаться</span>
+
+      </form>
+
+      <span class="tick">Это бесплатно</span>
+    </main>
+    <footer class="page-footer">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img class="footer-contacts-logo" src="#" alt="Логотип Девайс.">
+        <address class="footer-contacts-address">
+          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+        <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
+      </section>
+
+      <section class="advantages-footer">
+        <ul class="advantages-footer">
+        <li class="advantages-item">
+          <a class="advantages-link" href="#">Доставка</a>
+        </li>
+        <li class="advantages-item">
+          <a class="advantages-link" href="#">Гарантии</a>
+        </li>
+        <li class="advantages-item">
+          <a class="advantages-link" href="#">Контакты</a>
+        </li>
+        </ul>
+      </section>
+
+      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+
+    </footer>
+
+
 
   </body>
 </html>
