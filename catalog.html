@@ -6,7 +6,6 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
         <a class="navigation-logo" href="index.html"> <img class="page-header-logo" src="#" alt="Логотип Девайс."></a>
         <form class="search">
             <img class="search-icon" src="#">
@@ -14,25 +13,25 @@
             <button class="search" type="submit">Найти</button>
         </form>
 
+     <nav class="navigation">
        <ul class="custom menu">
           <li class="navigation-item">
-            <button class="login-user">
-              <img class="user-icon" src="#">
-            </button>
+            <a class="login-user" href="#">
+            </a>
           </li>
 
           <li class="navigation-item">
-            <button class="compare-button">
+            <a class="compare-button" href="#">
               <img class="compare-icon" src="#">
               <span class="compare">Сравнить</span>
-            </button>
+            </a>
           </li>
 
           <li class="navigation-item">
-            <button class="cart-button">
+            <a class="cart-button" href="#">
               <img class="cart-icon" src="#">
               <span class="compare">Корзина</span>
-            </button>
+            </a>
           </li>
           </ul>
 
@@ -40,6 +39,7 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">Каталог товаров</a>
               <img class="catalog-icon" src="#">
+              <ul class="catalog-categories-list"></ul>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Доставка</a>
@@ -55,13 +55,13 @@
       </nav>
     </header>
     <main class="main-inner">
-      <h2 class="title-inner">Моноподы для селфи</h2>
+      <h1 class="title-inner">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог товаров</a>
+          <a class="breadcrumbs-link" href="#">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -126,12 +126,15 @@
 
     <button class="button" type="submit">Показать</button>
      </form>
+      </section>
 
+     <div class="select-control">
      <select class="select-control" aria-label="Сортировка">
       <option value="popular">Популярные</option>
       <option value="cheap">Дешёвые</option>
       <option value="expensive">Дорогие</option>
      </select>
+    </div>
 
     <a class="button" href="#">
       <span class="visually-hidden">Сортировка вверх</span>
@@ -142,26 +145,26 @@
 
     <ul class="product-list">
      <li class="product-card">
-      <a class="product-card-link" href="product.html">
+      <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="">
         <h3 class="product-card-title">Любительская селфи-палка</h3>
       <b class="product-card-price">500 ₽</b>
       </a>
      </li>
      <li class="product-card">
-      <a class="product-card-link" href="product.html">
+      <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="">
         <h3 class="product-card-title">Профессиональная селфи-палка </h3>
       <b class="product-card-price">1500 ₽</b>
       </a>
      </li><li class="product-card">
-      <a class="product-card-link" href="product.html">
+      <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="">
         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
       <b class="product-card-price">2500 ₽</b>
       </a>
      </li><li class="product-card">
-      <a class="product-card-link" href="product.html">
+      <a class="product-card-link" href="#">
         <img class="product-card-image" src="#" alt="">
         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
       <b class="product-card-price">1500 ₽</b>
@@ -173,9 +176,7 @@
 
     <ul class="pagination">
       <li class="pagination-item">
-        <a class="pagination-link pagination-prev pagination-disabled">
-          <span class="indicator">Назад</span>
-        </a>
+        <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
@@ -225,6 +226,27 @@
       </section>
 
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+        <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        </section>
 
     </footer>
 
