@@ -20,7 +20,8 @@
   font-display: swap;
 }
 
-body {color: #000000;
+body {
+  color: #000000;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
@@ -78,7 +79,8 @@ body {color: #000000;
   line-height: 50px;
 }
 
-.subtitle {color: #444444;
+.subtitle {
+  color: #444444;
   font-family: "Rubik", sans-serif;
   line-height: 30px;
  }
@@ -97,7 +99,8 @@ body {color: #000000;
   line-height: 30px;
 }
 
-.specifications-text {color: #444444;
+.specifications-text {
+  color: #444444;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -118,7 +121,8 @@ body {color: #000000;
   text-transform: uppercase;
 }
 
-.tablink-current {color: #ffe17f;
+.tablink-current {
+  color: #ffe17f;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -132,7 +136,8 @@ body {color: #000000;
   font-weight: 800;
   line-height: 50px;}
 
-.tabcontent-text {color: #444444;
+.tabcontent-text {
+  color: #444444;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -155,7 +160,8 @@ body {color: #000000;
     line-height: 50px;
   }
 
-  .about-text {color: #444444;
+  .about-text {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     font-style: normal;
     line-height: 30px;
@@ -183,30 +189,35 @@ body {color: #000000;
     line-height: 50px;
   }
 
-  .contacts {color: #444444;
+  .contacts {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
   }
 
-  .contacts-subtitle {color: #444444;
+  .contacts-subtitle {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
   }
 
-  .contacts {color: #444444;
+  .contacts {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
   }
 
-  .contacts-phone {color: #444444;
+  .contacts-phone {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
     text-decoration: underline;
   }
 
-  .contacts-subtitle {color: #444444;
+  .contacts-subtitle {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -228,12 +239,14 @@ body {color: #000000;
     line-height: 50px;
   }
 
-  .newsletter {color: #444444;
+  .newsletter {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
   }
 
-  .field-placeholder-email {color: #444444;
+  .field-placeholder-email {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
   }
@@ -246,18 +259,21 @@ body {color: #000000;
     text-transform: uppercase;
   }
 
-  .tick {color: #444444;
+  .tick {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     line-height: 30px;
   }
 
-  .about-text {color: #ffffff;
+  .about-text {
+    color: #ffffff;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .advantages-link {color: #ffffff;
+  .advantages-link {
+    color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21px;
@@ -265,7 +281,8 @@ body {color: #000000;
     text-transform: uppercase;
   }
 
-  .footer-contacts-address-phone {color:  #ffffff;
+  .footer-contacts-address-phone {
+    color:  #ffffff;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -346,7 +363,8 @@ body {color: #000000;
     letter-spacing: -0.36px;
   }
 
-  .product-card-price {color: #444444;
+  .product-card-price {
+    color: #444444;
     text-align: right;
     font-family: "Rubik", sans-serif;
     line-height: 21px;
@@ -361,7 +379,8 @@ body {color: #000000;
     text-transform: uppercase;
   }
 
-  .pagination-prev-disabled {color: #444444;
+  .pagination-prev-disabled {
+    color: #444444;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21px;
@@ -369,13 +388,15 @@ body {color: #000000;
     text-transform: uppercase;
   }
 
-  .pagination-link-current {color: #444444;
+  .pagination-link-current {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .pagination-link {color: #444444;
+  .pagination-link {
+    color: #444444;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
