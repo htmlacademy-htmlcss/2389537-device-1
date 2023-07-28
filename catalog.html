@@ -11,13 +11,18 @@
       <img class="logo-device" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс."></a>
     <form class="search" action="https://echo.htmlacademy.ru/" method="get">
       <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
-      <input class="field" placeholder="Поиск по сайту" name="search" type="search" id="search">
-      <button class="search" type="submit">Найти</button>
+      <input class="field" placeholder="Текст поиска" name="search" type="search" id="search">
+      <button class="search visually-hidden" type="submit">Найти</button>
+      <!--спросить-->
     </form>
   <nav class="navigation">
    <ul class="custom-menu">
     <li class="navigation-item">
-      <a class="login-user" href="#">Войти</a>
+      <a class="login-user" href="#">Коля Петухов</a>
+    </li>
+
+    <li class="navigation-item">
+      <a class="login-user login-user-out" href="#">Выйти</a>
     </li>
 
     <li class="navigation-item">
@@ -121,7 +126,7 @@
       </ul>
     </fieldset>
 
-    <button class="button" type="submit">Показать</button>
+    <button class="button button-show" type="submit">Показать</button>
      </form>
       </section>
 
@@ -172,6 +177,7 @@
      </li>
     </ul>
 
+    <div class="pagination-catalog">
     <button class="button-pagination-show-more" type="button">Загрузить ещё</button>
 
     <ul class="pagination">
@@ -199,6 +205,7 @@
         </a>
       </li>
     </ul>
+  </div>
       </section>
     </main>
     <footer class="page-footer">
