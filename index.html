@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-    <a class="logo-device-link" href="#">
+      <a class="logo-device-link" href="#">
       <img class="logo-device" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс."></a>
     <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
       <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
@@ -47,7 +48,7 @@
             <a class="catalog-categories-link" href="#">Квадрокоптеры</a>
           </li>
           <li class="catalog-categories-item">
-            <a class="catalog-categories-link" href="#">Моноподы для селфи</a>
+            <a class="catalog-categories-link" href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="catalog-categories-item">
             <a class="catalog-categories-link" href="#">Умные часы</a>
@@ -67,7 +68,6 @@
         <a class="navigation-link" href="#">Контакты</a>
       </li>
     </ul>
-
 </nav>
     </header>
     <main class="main-index">
@@ -85,7 +85,7 @@
         <ul class="dignity">
           <li class="specifications"><strong>800 м</strong><span class="specifications-text">Дальность полета</span>
           </li>
-          <li class="specifications"><strong>50 м</strong><span class="specifications">Радиус поражения</span>
+          <li class="specifications"><strong>50 м</strong><span class="specifications-text">Радиус поражения</span>
           </li>
         </ul>
       </div>
@@ -97,7 +97,7 @@
         </p>
         <a class="button button-more" href="#">Подробнее</a>
           <ul class="dignity">
-            <li class="specifications"><strong>48 часов</strong><span class="specifications">Без подзарядки</span>
+            <li class="specifications"><strong>48 часов</strong><span class="specifications-text">Без подзарядки</span>
             </li>
           </ul>
         </div>
@@ -109,9 +109,9 @@
           </p>
           <a class="button button-more" href="#">Подробнее</a>
             <ul class="dignity">
-              <li class="specifications"><strong>8,5 м</strong><span class="specifications">Длина палки</span></li>
-              <li class="specifications"><strong>5 кг</strong><span class="specifications">Вес палки</span></li>
-              <li class="specifications"><strong>Карбон</strong><span class="specifications">Материал</span></li>
+              <li class="specifications"><strong>8,5 м</strong><span class="specifications-text">Длина палки</span></li>
+              <li class="specifications"><strong>5 кг</strong><span class="specifications-text">Вес палки</span></li>
+              <li class="specifications"><strong>Карбон</strong><span class="specifications-text">Материал</span></li>
             </ul>
         </div>
             <button class="slider-button slider-prev" type="button">
@@ -147,7 +147,7 @@
           <a class="catalog-categories-link" href="#">Виртуальная реальность</a>
         </li>
         <li class="catalog-categories-item">
-          <a class="catalog-categories-link" href="#">Моноподы для селфи</a>
+          <a class="catalog-categories-link" href="catalog.html">Моноподы для селфи</a>
         </li>
         <li class="catalog-categories-item">
           <a class="catalog-categories-link" href="#">Экшн-камеры</a>
@@ -163,27 +163,30 @@
         </li>
       </ul>
     </section>
+
+    <section class="advantages-more">
       <div class="tabs">
-        <button class="tablinks" type="button">Доставка</button>
+        <button class="tablinks tablink-current" type="button">Доставка</button>
         <button class="tablinks" type="button">Гарантия</button>
         <button class="tablinks" type="button">Кредит</button>
       </div>
       <section class="tabcontent-current">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо
+        <h2 class="tabcontent">Доставка</h2>
+        <p class="tabcontent-text">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
       <section class="tabcontent">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас
+        <h2 class="tabcontent">Гарантия</h2>
+        <p class="tabcontent-text">Если из-за возгорания купленного у нас товара у вас
           сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
       </section>
       <section class="tabcontent">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+        <h2 class="tabcontent">Кредит</h2>
+        <p class="tabcontent-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
       </section>
+    </section>
 
       <button class="modal" type="button">Доставим редкий товар под заказ</button>
 
@@ -225,8 +228,8 @@
       <p class="newsletter">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email</label>
-        <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
+        <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+        <button class="button-newsletter-button" type="submit">Подписаться</button>
       </form>
       <span class="tick">Это бесплатно</span>
       </section>
@@ -236,7 +239,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <img class="footer-contacts-logo" src="images/logo-footer.svg" alt="Логотип Девайс.">
         <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="about-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
 
@@ -246,7 +249,7 @@
           <a class="advantages-link" href="#">Доставка</a>
         </li>
         <li class="advantages-item">
-          <a class="advantages-link" href="#">Гарантии</a>
+          <a class="advantages-link" href="#">Гарантия</a>
         </li>
         <li class="advantages-item">
           <a class="advantages-link" href="#">Контакты</a>
@@ -274,7 +277,9 @@
           </a>
         </li>
       </ul>
-      <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p class="about-text">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      </p>
       </section>
     </footer>
 
