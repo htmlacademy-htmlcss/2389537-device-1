@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-container">
-      <a class="logo-device-link" href="#">
-      <img class="logo-device" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс.">
+      <a class="logo-device-header" href="#">
+      <img class="logo-device-header" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс.">
     </a>
 
+    <div class="header-container">
     <div class="header-search-custom">
     <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
       <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
@@ -21,15 +21,21 @@
 
    <nav class="navigation-custom">
    <ul class="custom-menu">
-    <li class="navigation-item">
+    <li class="navigation-custom-item">
       <a class="login-user" href="#">Войти</a>
     </li>
 
-    <li class="navigation-item">
+    <li class="navigation-custom-item">
+      <a class="login-user" href="#"></a>
+    </li>
+   </ul>
+
+   <ul class="custom-menu">
+    <li class="navigation-custom-item">
       <a class="compare-button" href="#">Сравнить</a>
     </li>
 
-    <li class="navigation-item">
+    <li class="navigation-custom-item">
       <a class="cart-button" href="#">Корзина</a>
     </li>
     </ul>
@@ -38,8 +44,8 @@
 
    <nav class="navigation-item">
     <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Каталог товаров</a>
+      <li class="navigation-item navigation-catalog">
+        <a class="navigation-link " href="#">Каталог товаров</a>
         <ul class="header-categories-list">
           <li class="header-categories-item">
             <a class="header-categories-link" href="#">Виртуальная реальность</a>
@@ -55,6 +61,9 @@
           </li>
           <li class="header-categories-item">
             <a class="header-categories-link" href="#">Умные часы</a>
+          </li>
+          <li class="header-categories-item">
+            <a class="header-categories-link" href="#"></a>
           </li>
           <li class="header-categories-item">
             <a class="header-categories-link" href="#">Экшн-камеры</a>
@@ -82,6 +91,7 @@
       <section class="slide">
         <h2 class="visually-hidden">Слайдер с популярными товарами.</h2>
       <div class="goods-slide">
+        <span class="slide-number">01</span>
       <img class="slider-image" src="images/sliders/quadrocopter.png" width="560" height="560" alt="Квадрокоптер.">
        <div class="slide-container">
         <h2 class="heading">Порхает как бабочка, жалит как пчела!</h2>
@@ -99,7 +109,8 @@
       </div>
       </div>
 
-      <div class="goods-slide">
+      <div class="goods-slide invisible">
+        <span class="slide-number">02</span>
         <img class="slider-image" src="images/sliders/bracelet.png" width="560" height="560" alt="Фитнес-браслет.">
         <div class="slide-container">
         <h2 class="heading">Худеем <br>правильно!</h2>
@@ -114,7 +125,8 @@
         </div>
       </div>
 
-        <div class="goods-slide">
+        <div class="goods-slide invisible">
+          <span class="slide-number">03</span>
           <img class="slider-image" src="images/sliders/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
           <div class="slide-container">
           <h2 class="heading">Делай селфи,<br> как Бен Стиллер! </h2>
@@ -189,19 +201,19 @@
         <button class="tablinks" type="button">Кредит</button>
       </div>
       <div class="tabcontent-group">
-      <section class="tabcontent tabcontent-current">
+      <section class="tabcontent tabcontent-current tabcontent-delivery">
         <h2 class="tabcontent-title">Доставка</h2>
         <p class="tabcontent-text">Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
-      <section class="tabcontent">
+      <section class="tabcontent tabcontent-warranty invisible">
         <h2 class="tabcontent-title">Гарантия</h2>
         <p class="tabcontent-text">Если из-за возгорания купленного у нас товара у вас
           сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
       </section>
-      <section class="tabcontent">
+      <section class="tabcontent tabcontent-credit invisible">
         <h2 class="tabcontent-title">Кредит</h2>
         <p class="tabcontent-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
       </section>
@@ -264,17 +276,17 @@
 
     <footer class="page-footer">
       <div class="footer-container">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты.</h2>
         <a class="logo-device-link" href="index.html">
         <img class="footer-contacts-logo" src="images/logo-footer.svg" alt="Логотип Девайс.">
         </a>
+        <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты.</h2>
+
         <address class="footer-contacts-address">
           <p class="about-text-footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
 
-      <section class="advantages-footer">
         <ul class="advantages-footer">
         <li class="advantages-item">
           <a class="advantages-link" href="#">Доставка</a>
@@ -286,12 +298,12 @@
           <a class="advantages-link" href="#">Контакты</a>
         </li>
         </ul>
-      </section>
+
 
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
 
-      <section class="footer-social">
-      <ul class="footer-social-list">
+
+      <ul class="footer-social">
         <li class="footer-social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
@@ -308,12 +320,13 @@
           </a>
         </li>
       </ul>
-      <p class="about-text">
+
+      <p class="academy-logo">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img class="htmlacademy" src="images/html.svg" alt="Сайт htmlacademy.">
         </a>
       </p>
-      </section>
+
     </div>
     </footer>
 
