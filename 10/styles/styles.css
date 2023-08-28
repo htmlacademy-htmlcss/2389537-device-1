@@ -57,26 +57,25 @@ body {
 
 .page-header {
   width: 1160px;
+  min-height: 300px;
   padding-left: 60px;
   padding-right: 60px;
-  align-items: center;
-  margin: 40px auto 35px;
+  margin: 40px auto 0;
+  background-color:#ffe17f
+}
+
+.page-header-catalog {
+  width: 1160px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 21px;
+  margin: 40px auto 0;
   background-color:#ffe17f
 }
 
 .header-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1040px;
-}
-
-.entrance {
-  min-width: 231px;
-  margin-right: 26px;
-}
-
-.compare {
-  margin-right: 36px;
 }
 
 .header-search-custom {
@@ -86,6 +85,7 @@ body {
 }
 
 .site-search {
+  margin-right: 26px;
   display: flex;
   height: 40px;
 }
@@ -109,15 +109,21 @@ body {
 }
 
 .custom-menu {
+  gap: 36px;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
   display: flex;
   list-style-type: none;
 }
 
+.navigation-custom {
+  display: flex;
+  flex-wrap: wrap;
+  width: 521px;
+  justify-content: space-between;
+}
+
 .login-user {
-  width: 231px;
   color: inherit;
   text-decoration: inherit;
   font-family: "Rubik", sans-serif;
@@ -160,14 +166,20 @@ body {
   width: 1040px;
   padding: 0;
   margin: 0;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   display: flex;
   list-style-type: none;
 }
 
+.navigation-catalog {
+  position: relative;
+  margin-right: 257px;
+}
+
 .navigation-link {
   display: block;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: inherit;
   text-decoration: inherit;
   font-family: "Raleway", sans-serif;
@@ -178,12 +190,16 @@ body {
 }
 
 .header-categories-list {
+  z-index: 3;
+  left: -60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #ffe17f;
+  width: 1160px;
+  position: absolute;
   display: grid;
   grid-template-columns: 222px 211px 211px;
-  height: 120px;
-  margin: 0;
-  margin-bottom: 27px;
-  padding: 0;
+  min-height: 120px;
   list-style-type: none;
 }
 
@@ -214,7 +230,7 @@ body {
  }
 
 .button-more {
-  margin-top: 0;
+  padding: 10px 5px;
   margin-bottom: 50px;
   display: block;
   width: 220px;
@@ -229,6 +245,21 @@ body {
   text-transform: uppercase;
 }
 
+.slide-number {
+  position: absolute;
+  display: block;
+  margin-left: 820px;
+  margin-top: 75px;
+  width: 250px;
+  height: 135px;
+  color: #FFFFFF;
+  text-align: right;
+  font-family: Rubik;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
 .slider-image {
   padding-right: 40px;
   max-width: 100%;
@@ -241,16 +272,25 @@ body {
 }
 
 .slide-container {
+  z-index: 0;
+  padding-top: 121px;
   padding-bottom: 38px;
   width: 560px;
 }
 
+.invisible {
+  display: none;
+}
+
 .goods-slide {
+  margin-top: -150px;
   display: flex;
   flex-direction: row;
 }
 
 .slider-pagination {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -311,6 +351,12 @@ body {
   width: 160px;
 }
 
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin-right: 20px;
+}
+
 .tabs {
   flex-wrap: wrap;
   margin-right: 116px;
@@ -349,23 +395,23 @@ body {
 }
 
 .tabcontent {
-  width: 452px;
+  width: 694px;
 }
 
 .tabcontent-delivery {
-  background-image: url("images/advantages/delivery.svg");
+  background-image: url("../images/advantages/delivery.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .tabcontent-warranty {
-  background-image: url("images/advantages/warranty.svg");
+  background-image: url("../images/advantages/warranty.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .tabcontent-credit {
-  background-image: url("images/advantages/credit.svg");
+  background-image: url("../images/advantages/credit.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: 136px 164px;
@@ -381,6 +427,7 @@ body {
 }
 
 .tabcontent-text {
+  width: 452px;
   color: #444444;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -624,7 +671,6 @@ body {
 
 .page-footer {
   background-color: #444444;
-  display: flex;
   }
 
 .footer-container {
@@ -633,7 +679,7 @@ body {
   padding: 62px 141px 61px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 234px 444px 175px;
+  grid-template-columns: 239px auto 174px;
 }
 
 .logo-device-link {
@@ -651,11 +697,12 @@ body {
 }
 
 .advantages-footer {
+  justify-self: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  gap: 35px;
   list-style-type: none;
 }
 
@@ -677,21 +724,19 @@ body {
   text-decoration: underline;
 }
 
-.footer-social-list {
+.footer-social {
+  justify-self: center;
+  gap: 15px;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  grid-column: 2 / 3;
   list-style-type: none;
 }
 
-.footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  grid-column: 2 / 3;
-}
-
 .academy-logo {
+  justify-self: end;
   margin: 0;
   padding: 0;
 }
@@ -876,12 +921,15 @@ body {
 }
 
 .product-card-image {
+  grid-column: 1/-1;
   max-width: 100%;
   height: auto;
   margin-bottom: 32px;
 }
 
 .product-card-link {
+  display: grid;
+  grid-template-columns: 1fr 80px;
   color: inherit;
   text-decoration: inherit;
   font-family: "Rubik", sans-serif;
@@ -891,7 +939,8 @@ body {
 }
 
 .product-card-title {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-price {
