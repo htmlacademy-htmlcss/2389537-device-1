@@ -16,7 +16,8 @@
     <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
       <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
       <input class="field" placeholder="Текст поиска" name="search" type="search" id="search">
-      <button class="search" type="submit">Найти</button>
+      <span class="outline"></span>
+      <button class="search" type="submit"><span class="search-button">Найти</span></button>
     </form>
   <nav class="navigation-custom">
    <ul class="custom-menu">
@@ -35,7 +36,10 @@
     </li>
 
     <li class="navigation-custom-item">
+
       <a class="cart-button" href="#">Корзина</a>
+
+      </div>
     </li>
     </ul>
   </nav>
@@ -111,7 +115,27 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость</legend>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 1px; width: 115px">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
 
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label filter-label-from">
+                от <input class="range-input range-input-from" type="number" value="0" name="min-price">
+              </label>
+              <label class="catalog-filter-label filter-label-to">
+                до <input class="range-input range-input-to" type="number" value="5000" name="max-price">
+              </label>
+            </div>
+          </div>
         <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Цвет</legend>
         <ul class="catalog-filter-list">
@@ -177,10 +201,10 @@
       <option value="expensive">Дорогие</option>
      </select>
     <div class="arrows-select">
-    <a class="button-up" href="#">
+    <a class="button-select" href="#">
       <span class="visually-hidden">Сортировка вверх</span>
     </a>
-    <a class="button-down" href="#">
+    <a class="button-select button-select-down" href="#">
       <span class="visually-hidden">Сортировка вниз</span>
     </a>
   </div>
