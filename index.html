@@ -85,7 +85,6 @@
                 <a class="header-categories-link" href="#">Умные часы</a>
               </li>
               <li class="header-categories-item">
-                <a class="header-categories-link" href="#"></a>
               </li>
               <li class="header-categories-item">
                 <a class="header-categories-link" href="#">Экшн-камеры</a>
@@ -377,14 +376,40 @@
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="user-modal">
             <p class="field-group">
-              <label class="visually-hidden" for="auth-login">Логин</label>
-              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+              <label class="modal-sabtitle" for="auth-login">Ваше имя:</label>
+              <input class="auth-form-field auth-form-field-name" type="text" id="auth-login" name="auth-login" placeholder="Введите имя">
             </p>
             <p class="field-group">
-              <label class="visually-hidden" for="auth-password">Пароль</label>
-              <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+              <label class="modal-sabtitle" for="auth-password">Ваш e-mail:</label>
+              <input class="auth-form-field auth-form-field-email" type="email" id="auth-password" name="auth-password" placeholder="почта">
             </p>
+          </div>
+          <div class="goods-modal">
+            <p class="field-group">
+              <label class="modal-sabtitle" for="auth-password">Что нужно привезти:</label>
+              <input class="auth-form-field auth-form-field-prodact" type="text" id="auth-password" name="auth-password" placeholder="В свободной форме">
+            </p>
+            <p class="field-group">
+              <span class="modal-sabtitle-quantity">
+              <label class="modal-sabtitle " for="auth-password">Количество:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                </button>
+                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.</span>
+              </span>
+            </span>
+            <div class="quantity-inner">
+              <button class="button-minus"></button>
+              <input class="auth-form-field auth-form-field-quantity" type="text" id="auth-password" name="auth-password" placeholder="1">
+              <button class="button-plus"></button>
+          </div>
+          </p>
+            </div>
+          <button class="button" type="submit"><span class="modal-button">Отправить</span></button>
+        </div>
           </form>
         </section>
       </div>
