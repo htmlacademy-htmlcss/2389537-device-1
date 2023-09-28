@@ -33,8 +33,8 @@
       <a class="compare-button" href="#">Сравнить</a>
     </li>
 
-    <li class="navigation-custom-item">
-      <a class="cart-button" href="#">Корзина</a>
+    <li class="navigation-custom-item navigation-custom-item-popover">
+      <a class="cart-button " href="#">Корзина</a>
       <div class="popover popover-cart">
         <h2 class="visually-hidden">Корзина пользователя.</h2>
         <div class="popover-content">
@@ -49,9 +49,9 @@
         </li>
         <div class="unification-cart">
         <span class="quantity-cart">Товаров: 2</span>
-        <span class="amount-cart">Сумма: 2000 ₽</span></section>
+        <span class="amount-cart">Сумма: 2000 ₽</span>
         </div>
-      </ul>
+        </ul>
         <button class="button-light">
           Открыть корзину
         </button>
@@ -379,31 +379,31 @@
             <div class="user-modal">
             <p class="field-group">
               <label class="modal-sabtitle" for="auth-login">Ваше имя:</label>
-              <input class="auth-form-field auth-form-field-name" type="text" id="auth-login" name="auth-login" placeholder="Введите имя">
+              <input class="modal-form-field modal-form-field-name" type="text" id="auth-login" name="auth-login" placeholder="Введите имя">
             </p>
             <p class="field-group">
               <label class="modal-sabtitle" for="auth-password">Ваш e-mail:</label>
-              <input class="auth-form-field auth-form-field-email" type="email" id="auth-password" name="auth-password" placeholder="почта">
+              <input class="modal-form-field modal-form-field-email" type="email" id="auth-password" name="auth-password" placeholder="почта">
             </p>
           </div>
           <div class="goods-modal">
             <p class="field-group">
-              <label class="modal-sabtitle" for="auth-password">Что нужно привезти:</label>
-              <input class="auth-form-field auth-form-field-prodact" type="text" id="auth-password" name="auth-password" placeholder="В свободной форме">
+              <label class="modal-sabtitle" for="order-field">Что нужно привезти:</label>
+              <input class="modal-form-field modal-form-field-prodact" type="text" id="order-field" name="order-field" placeholder="В свободной форме">
             </p>
             <p class="field-group">
               <span class="modal-sabtitle-quantity">
-              <label class="modal-sabtitle " for="auth-password">Количество:</label>
-              <span class="tooltip">
+              <label class="modal-sabtitle " for="quantity-goods">Количество:<span class="tooltip">
                 <button class="tooltip-toggle" type="button">
                 </button>
                 <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
                   к провозу багажа.</span>
               </span>
+            </label>
             </span>
             <div class="quantity-inner">
               <button class="button-minus"></button>
-              <input class="auth-form-field auth-form-field-quantity" type="text" id="auth-password" name="auth-password" placeholder="1">
+              <input class="modal-form-field modal-form-field-quantity" type="number" id="quantity-goods" name="auth-password" value="1">
               <button class="button-plus"></button>
           </div>
           </p>

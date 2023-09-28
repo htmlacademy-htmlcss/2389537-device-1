@@ -284,6 +284,14 @@ body {
   opacity: 0.3;
 }
 
+.navigation-custom-item-popover:focus-within .popover-cart {
+  display: block;
+}
+
+.popover-cart {
+  display: none;
+}
+
 .wrapper-navigation {
   display: flex;
   width: 471px;
@@ -1466,7 +1474,7 @@ body {
 
 }
 
-.auth-form-field {
+.modal-form-field {
   height: 60px;
   background-color: #f0f0f0;
   border:none;
@@ -1480,48 +1488,46 @@ body {
   line-height: 20px;
 }
 
-.auth-form-field:hover {
+.modal-form-field:hover {
   opacity: 0.6;
 }
 
-.auth-form-field:focus-visible {
+.modal-form-field:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.auth-form-field:active {
+.modal-form-field:active {
   opacity: 0.3;
 }
 
-.auth-form-field-name {
+.modal-form-field-name {
   width: 360px;
   position: relative;
-}
-
-.auth-form-field-name::after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 12px;right: 20px;
-  background-image: url(../images/icons/user.svg);
+  background-image: url(../images/icons/user-modal.svg);
   background-repeat: no-repeat;
-  background-position: right;
-  position: absolute;
+  background-position: right 20px center;
 }
 
-.auth-form-field-email {
+.modal-form-field-email {
   width: 360px;
   background-image: url(../images/icons/email.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 20px center;
 }
 
-.auth-form-field-prodact{
+.modal-form-field-prodact{
   width: 540px;
 }
 
-.auth-form-field-quantity {
+.modal-form-field-quantity {
   width: 60px;
+}
 
+.modal-form-field-quantity::-webkit-outer-spin-button,
+.modal-form-field-quantity::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
 }
 
 .quantity-inner {
@@ -1760,6 +1766,10 @@ body {
   margin: 0 auto;
 }
 
+.range {
+  position: relative;
+}
+
 .range-scale {
   position: relative;
   height: 2px;
@@ -1828,15 +1838,15 @@ body {
   line-height: 20px;
   opacity: 0.3;
   position: absolute;
-  top: 556px;
+  top: 10px;
 }
 
 .filter-label-from {
-  left: 74px;
+  left: -15px;
 }
 
 .filter-label-to {
-  left: 180px;
+  left: 100px;
 }
 .range-input {
   padding: 0 2px;
@@ -1956,17 +1966,28 @@ body {
 }
 
 .control {
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  padding-left: 40px;
   position: relative;
+  display: block;
+  padding-left: 36px;
 }
 
-.control-color::before {
-  content: "";
-  display: inline-block;
+.control:hover::before{
+  opacity: 0.6;
+}
+
+.control:focus-visible::before {
+  border: 2px solid #af4fff;
+}
+
+.control:active:before {
+  opacity: 1;
+  background-image: url(../images/catalog/mark-filtr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control-mark {
   position: absolute;
+  top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -1974,20 +1995,16 @@ body {
   border-radius: 3px;
   opacity: 0.3;
 }
-.control-color:hover::before{
-  opacity: 0.6;
+
+.control-label {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 40px;
+  position: relative;
 }
 
-.control-color:focus-visible::before {
-  border: 2px solid #af4fff;
-}
 
-.control-color:active:before {
-  opacity: 1;
-  background-image: url(../images/catalog/mark-filtr.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .control-bluetooth::before {
   content: "";
@@ -2002,7 +2019,11 @@ body {
 }
 
 .control-bluetooth:hover::before {
+  opacity: 0.6;
+}
 
+.control-bluetooth:focus-visible::before {
+  border: 2px solid #af4fff;
 }
 
 .control-bluetooth:active::before {
@@ -2326,8 +2347,9 @@ body {
   font-family: "Rubik", sans-serif;
   color: #ffffff;
   background-color: #000000;
-  display: none;
+
 }
+
 
 .button-light {
   margin: 20px;
