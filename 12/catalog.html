@@ -44,24 +44,23 @@
         <ul class="cart-items-list">
         <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
           <p class="cart-item-title">Любительская селфи-палка</p>
-        <button class="delete-cart"></button>
+          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
         </li>
         <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
           <p class="cart-item-title">Профессиональная селфи-палка</p>
-        <button class="delete-cart"></button>
+          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
         </li>
         <div class="unification-cart">
         <span class="quantity-cart">Товаров: 2</span>
         <span class="amount-cart">Сумма: 2000 ₽</span>
         </div>
         </ul>
-        <button class="button-light">
-          Открыть корзину
-        </button>
+        <a class="open-cart" href="#">Открыть корзину</a>
         </div>
       </div>
-      </div>
-    </li>
+      </li>
+    </div>
+
       </div>
     </li>
     </ul>
@@ -90,7 +89,6 @@
             <a class="header-categories-link" href="#">Умные часы</a>
           </li>
           <li class="header-categories-item">
-            <a class="header-categories-link" href="#"></a>
           </li>
           <li class="header-categories-item">
             <a class="header-categories-link" href="#">Экшн-камеры</a>
@@ -159,6 +157,7 @@
               </label>
             </div>
           </div>
+        </fieldset>
         <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Цвет</legend>
         <ul class="catalog-filter-list">
@@ -192,7 +191,7 @@
           </li>
           <li class="catalog-filter-item">
             <label class="control">
-              <input class="visually-hidden control-input " type="checkbox" name="pink">
+              <input class="visually-hidden control-input" type="checkbox" name="pink">
               <span class="control-mark"></span>
               <span class="control-label">Розовый</span>
             </label>
@@ -204,17 +203,18 @@
       <legend class="catalog-filter-title">Bluetooth</legend>
       <ul class="catalog-filter-list">
         <li class="catalog-filter-item">
-          <label class="control control-bluetooth">
-            <input class="control-input control-input-bluetooth" type="radio" name="choice-group" value="yes" checked>
-
-        Есть
+          <label class="control">
+            <input class="visually-hidden control-input" type="radio" name="choice-group" value="yes" checked>
+            <span class="control-mark"></span>
+            <span class="control-label">Есть</span>
           </label>
+
         </li>
         <li class="catalog-filter-item">
-          <label class="control control-bluetooth">
-            <input class="control-input control-input-bluetooth" type="radio" name="choice-group" value="no" >
-
-        Нет
+          <label class="control">
+            <input class="visually-hidden control-input" type="radio" name="choice-group" value="no">
+            <span class="control-mark"></span>
+            <span class="control-label">Нет</span>
           </label>
         </li>
       </ul>
@@ -359,17 +359,17 @@
       <ul class="footer-social">
         <li class="footer-social-item">
           <a class="social-link social-link-tg" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
+          <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
+          <span class="visually-hidden">Youtube.</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link social-link-tw" href="https://twitter.com/htmlacademy_ru">
-           <span class="visually-hidden">Твиттер</span>
+           <span class="visually-hidden">Твиттер.</span>
           </a>
         </li>
       </ul>

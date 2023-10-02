@@ -360,7 +360,7 @@ body {
 }
 
 .navigation-link-catalog:active +.header-categories-list {
-  display: block;
+  display: grid;
 }
 
 .plus {
@@ -1118,7 +1118,7 @@ body {
 
 .field-email:focus-visible {
   background-color: #bcbcbc;
-  outline: none;
+  outline: 2px solid #af4fff;
 }
 
 .field-email:active {
@@ -1129,11 +1129,11 @@ body {
   opacity: 0.3;
 }
 
-/*класс для ошибки
+
 .field-email-error {
   border: none;
   border-bottom: 3px solid #ff3d3d;
-}*/
+}
 
 .button-newsletter {
   padding: 18px 39px;
@@ -1438,7 +1438,7 @@ body {
 
 }
 
-.modal-auth {
+.modal-case {
   width: 920px;
 }
 
@@ -1500,6 +1500,34 @@ body {
   opacity: 0.3;
 }
 
+.error-modal-email {
+  border: 2px solid #ff3d3d;
+}
+
+.input-error-signature {
+  color: #ff3d3d;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  right: 270px;
+  top: 280px;
+
+}
+
+.error-modal-quantity::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 60px;
+  width: 180px;
+  border: 2px solid #ff3d3d;
+  content: "";
+}
+
 .modal-form-field-name {
   width: 360px;
   position: relative;
@@ -1532,6 +1560,9 @@ margin: 0;
 
 .quantity-inner {
   display: flex;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px;
+  position: relative;
 }
 
 .button-minus {
@@ -1576,7 +1607,7 @@ margin: 0;
   opacity: 0.3;
 }
 
-.auth-form .field-group {
+.modal-form .field-group {
   margin: 0;
   margin-bottom: 42px;
 }
@@ -1595,14 +1626,8 @@ margin: 0;
   letter-spacing: -0.36px;
 }
 
-.field-group {
+.field-group-error {
   position: relative;
-}
-
-.auth-form-user-options {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 400;
 }
 
 .tooltip {
@@ -1648,7 +1673,7 @@ margin: 0;
   font-weight: 400;
   text-transform: none;
   top: 32px;
-  padding: 19px 17px 0 19px;
+  padding: 19px 17px 22px 19px;
   display: block;
   width: 200px;
   position: absolute;
@@ -1848,21 +1873,19 @@ margin: 0;
 .filter-label-to {
   left: 100px;
 }
+
 .range-input {
   padding: 0 2px;
   font: inherit;
-  text-align: center;
+  text-align: left;
   background-color: transparent;
   border: none;
   appearance: textfield;
+  width: 70px;
 }
 
-.range-input-from {
-  width: 20px;
-}
-
-.range-input-to {
-  width: 40px;
+.range-input:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1971,20 +1994,6 @@ margin: 0;
   padding-left: 36px;
 }
 
-.control:hover::before{
-  opacity: 0.6;
-}
-
-.control:focus-visible::before {
-  border: 2px solid #af4fff;
-}
-
-.control:active:before {
-  opacity: 1;
-  background-image: url(../images/catalog/mark-filtr.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .control-mark {
   position: absolute;
   top: 2px;
@@ -2000,41 +2009,38 @@ margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  padding-left: 40px;
   position: relative;
 }
 
-
-
-.control-bluetooth::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  opacity: 0.3;
-}
-
-.control-bluetooth:hover::before {
-  opacity: 0.6;
-}
-
-.control-bluetooth:focus-visible::before {
-  border: 2px solid #af4fff;
-}
-
-.control-bluetooth:active::before {
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/catalog/mark-filtr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 1;
 }
 
-.control-input  {
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control-input:focus-visible + .control-mark {
+  outline: 2px solid #af4fff;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  z-index: -1;
-  opacity: 0;
-  left: 0;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+  opacity: 1;
 }
 
 .button-show {
@@ -2351,12 +2357,15 @@ margin: 0;
 }
 
 
-.button-light {
+.open-cart {
+  display: block;
+  background-color: #f0f0f0;
   margin: 20px;
   width: 280px;
   height: 50px;
   color:  #000000;
   text-align: center;
+  padding: 15px;
   font-family: "Raleway";
   font-size: 18px;
   font-style: normal;
@@ -2364,20 +2373,22 @@ margin: 0;
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.button-light:hover {
+.open-cart:hover {
   background-color: #ffe17f;
 }
 
-.button-light:focus-visible {
+.open-cart:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.button-light:active {
+.open-cart:active {
   background-color: #ffe17f;
   opacity: 0.3;
 }
+
 .cart-item {
   padding: 20px 0 20px 0;
   margin: 0 20px 0 20px;
@@ -2440,17 +2451,22 @@ margin: 0;
 
 .quantity-cart {
   width: 120px;
-  height: 44px;
+  display: block;
   margin-left: 20px;
   margin-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 19px;
 }
 
 .amount-cart {
   width: 150px;
-  height: 44px;
+  padding-top: 15px;
+  padding-bottom: 19px;
 }
 
 .unification-cart {
   background-color: #1a1a1a;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
