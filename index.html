@@ -17,7 +17,7 @@
       <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
       <input class="field" placeholder="Поиск по сайту" name="search" type="search" id="search">
       <span class="outline"></span>
-     <button class="search" type="submit">Найти</button>
+     <button class="search" type="submit"><span class="search-button">Найти</span></button>
     </form>
 
    <nav class="navigation-custom">
@@ -26,9 +26,6 @@
       <a class="login-user" href="#">Войти</a>
     </li>
 
-    <li class="navigation-custom-item-exit">
-      <a class="login-user-exit" href="#"></a>
-    </li>
    </ul>
 
    <ul class="custom-menu">
@@ -36,9 +33,31 @@
       <a class="compare-button" href="#">Сравнить</a>
     </li>
 
-    <li class="navigation-custom-item">
-      <a class="cart-button" href="#">Корзина</a>
-    </li>
+    <li class="navigation-custom-item navigation-custom-item-popover">
+      <a class="cart-button " href="#">Корзина</a>
+      <div class="popover popover-cart">
+        <h2 class="visually-hidden">Корзина пользователя.</h2>
+        <div class="popover-content">
+        <ul class="cart-items-list">
+        <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+          <p class="cart-item-title">Любительская селфи-палка</p>
+          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
+        </li>
+        <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+          <p class="cart-item-title">Профессиональная селфи-палка</p>
+          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
+        </li>
+        <div class="unification-cart">
+        <span class="quantity-cart">Товаров: 2</span>
+        <span class="amount-cart">Сумма: 2000 ₽</span>
+        </div>
+        </ul>
+        <a class="open-cart" href="#">Открыть корзину</a>
+        </div>
+      </div>
+      </li>
+      </div>
+
     </ul>
    </nav>
       </div>
@@ -47,7 +66,7 @@
         <ul class="navigation-list">
           <li class="navigation-item navigation-catalog">
             <a class="navigation-link navigation-link-catalog" href="#">Каталог товаров
-              <div class="plus"></div></a>
+              <span class="plus"></span></a>
             <ul class="header-categories-list">
               <li class="header-categories-item">
                 <a class="header-categories-link" href="#">Виртуальная реальность</a>
@@ -65,7 +84,6 @@
                 <a class="header-categories-link" href="#">Умные часы</a>
               </li>
               <li class="header-categories-item">
-                <a class="header-categories-link" href="#"></a>
               </li>
               <li class="header-categories-item">
                 <a class="header-categories-link" href="#">Экшн-камеры</a>
@@ -280,7 +298,7 @@
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
      </div>
-     <div class="form-container">
+     <div class="form-container"> <!--чтобы увидеть класс ошибки, добавьте input class="field-email-error"-->
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email" class="visually-hidden">Email</label>
         <input class="field-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -318,37 +336,100 @@
         </ul>
 
 
-      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+      <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.:+7 812 812-12-12</a>
 
       <div class="line-footer"></div>
 
       <ul class="footer-social">
         <li class="footer-social-item">
           <a class="social-link social-link-tg" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
+          <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
+          <span class="visually-hidden">Youtube.</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="social-link social-link-tw" href="https://twitter.com/htmlacademy_ru">
-           <span class="visually-hidden">Твиттер</span>
+           <span class="visually-hidden">Твиттер.</span>
           </a>
         </li>
       </ul>
 
       <p class="academy-logo">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Ссылка на сайт Htmlacademy.</span>
         </a>
       </p>
 
     </div>
     </footer>
 
+    <div class="modal-container">
+      <div class="modal modal-case">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="user-modal">
 
+              <p class="field-group">
+              <label class="modal-sabtitle" for="entering-name">Ваше имя:</label>
+              <input class="modal-form-field modal-form-field-name" type="text" id="entering-name" name="entering-name" placeholder="Введите имя">
+            </p>
+
+            <p class="field-group field-group-error"><!--Чтобы ивидеть класс ошибки, добавьте input class="error-modal-email"-->
+              <label class="modal-sabtitle" for="entering-mail">Ваш e-mail:</label>
+              <input class="modal-form-field modal-form-field-email error-modal-email" type="email" id="entering-mail" name="entering-mail" placeholder="Ваш e-mail" value="почта">
+            </p>
+              <span class="input-error-signature">Забавный у вас адрес</span>
+          </div>
+          <div class="goods-modal">
+
+            <p class="field-group">
+              <label class="modal-sabtitle" for="order-field">Что нужно привезти:
+              </label>
+              <input class="modal-form-field modal-form-field-prodact" type="text" id="order-field" name="order-field" placeholder="В свободной форме">
+            </p>
+
+            <p class="field-group">
+              <span class="modal-sabtitle-quantity">
+              <label class="modal-sabtitle " for="quantity-goods">Количество:
+                <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-delivery-information">
+                </button>
+                <span class="tooltip-text" id="tooltip-delivery-information" role="tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </span>
+                </span>
+              </label>
+              </span>
+             <span class="quantity-inner"><!--Чтобы увидеть класс ошибки, добавьте-->
+              <button class="button-minus" type="button">
+                <span class="visually-hidden">Кнопка уменьшения количества товаров.
+                </span>
+              </button>
+              <input class="modal-form-field modal-form-field-quantity error-modal-quantity" type="number" id="quantity-goods" name="quantity-goods" value="1">
+              <button class="button-plus" type="button">
+                <span class="visually-hidden">Кнопка увеличения количества товаров.
+                </span>
+              </button>
+             </span>
+            </p>
+            </div>
+          <button class="button" type="submit">
+            <span class="modal-button">Отправить
+            </span>
+          </button>
+        </div>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
