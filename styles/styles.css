@@ -373,6 +373,7 @@ body {
   margin-left: 7px;
   position: relative;
   right: 0;
+  flex-shrink: 0;
 }
 
 .plus::before, .plus::after {
@@ -388,11 +389,6 @@ body {
 .plus::after {
   transform: rotate(90deg);
 }
-
-/* класс активного пункта
-.active {
-  border-bottom: 2px solid #000000
-}*/
 
 .header-categories-list {
   z-index: 3;
@@ -448,7 +444,7 @@ body {
  }
 
 .button {
-  background-image: linear-gradient(to bottom,transparent 16px,#ffe17f 16px 24px,transparent 24px);
+  background-image: linear-gradient(to bottom,transparent 40%,#ffe17f 40% 55%,transparent 55%);
   width: 200px;
   padding: 10px 5px;
   display: block;
@@ -502,6 +498,7 @@ body {
   padding-right: 40px;
   max-width: 100%;
   height: auto;
+  width: 560px;
 }
 
 .slide {
@@ -520,6 +517,7 @@ body {
 .goods-slide {
   margin-top: -150px;
   display: flex;
+  align-items: flex-start;
 }
 
 .invisible {
@@ -758,7 +756,7 @@ body {
 }
 
 .tablinks-noselected {
-  background-image: linear-gradient(to bottom,transparent 16px,#ffe17f 16px 24px,transparent 24px);
+  background-image: linear-gradient(to bottom,transparent 40%,#ffe17f 40% 55%,transparent 55%);
   width: 160px;
   background-color: transparent;
   margin-bottom: 35px;
@@ -840,11 +838,10 @@ body {
   flex-direction: row;
 }
 
-.order-batton {
+.order-button {
   position: relative;
   cursor: pointer;
-  padding-top: 40px;
-  padding-bottom: 36px;
+  padding: 40px 135px 36px;
   display: block;
   width: 1160px;
   margin: 0 auto;
@@ -858,13 +855,14 @@ body {
   line-height: 24px;
   letter-spacing: 4px;
   text-transform: uppercase;
+
 }
 
-.order-batton::before {
+.order-button::before {
   content: "";
   display: block;
   width: 125px;
-  height: 100px;
+  min-height: 100px;
   background-color: #ffe17f;
   background-image: url("../images/avto.svg");
   background-repeat: no-repeat;
@@ -875,7 +873,7 @@ body {
   bottom: 0;
 }
 
-.order-batton::after {
+.order-button::after {
   content: "";
   display: block;
   width: 40px;
@@ -891,19 +889,19 @@ body {
   top: 30px;
 }
 
-.order-batton:hover:after {
+.order-button:hover:after {
   opacity: 1;
 }
 
-.order-batton:hover::before {
+.order-button:hover::before {
   background-color: #ffc700;
 }
 
-.order-batton:focus-visible {
+.order-button:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.order-batton:active {
+.order-button:active {
   opacity: 0.3;
 }
 
