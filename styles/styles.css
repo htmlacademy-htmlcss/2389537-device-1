@@ -337,6 +337,7 @@ body {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   align-items: center;
+  outline-offset: -2px;
 }
 
 .navigation-link:hover{
@@ -1435,11 +1436,11 @@ body {
   padding: 72px 80px;
   background-color: #ffffff;
   border: 10px solid #000000;
-
+  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.10);
 }
 
 .modal-case {
-  width: 920px;
+  width: 940px;
 }
 
 .modal-close-button {
@@ -1493,7 +1494,8 @@ body {
 }
 
 .modal-form-field:focus-visible {
-  outline: 2px solid #af4fff;
+  border: 2px solid #af4fff;
+  outline: none;
 }
 
 .modal-form-field:active {
@@ -1506,15 +1508,16 @@ body {
 
 .input-error-signature {
   color: #ff3d3d;
-  font-family: Rubik;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  position: absolute;
-  right: 270px;
-  top: 280px;
+  display: none;
+}
 
+.error-modal-email +.input-error-signature {
+  display: inline;
 }
 
 .error-modal-quantity::before {
@@ -1549,6 +1552,9 @@ body {
 
 .modal-form-field-quantity {
   width: 60px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .modal-form-field-quantity::-webkit-outer-spin-button,
@@ -1626,17 +1632,12 @@ margin: 0;
   letter-spacing: -0.36px;
 }
 
-.field-group-error {
-  position: relative;
-}
-
 .tooltip {
   position: absolute;
   margin-top: -5px;
   margin-left: 8px;
   width: 16px;
   height: 16px;
-
 }
 
 .tooltip-toggle {
@@ -1672,12 +1673,14 @@ margin: 0;
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
+  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.10);
   top: 32px;
   padding: 19px 17px 22px 19px;
   display: block;
   width: 200px;
   position: absolute;
   right: -40px;
+  z-index: 10;
   display: none;
 }
 
@@ -1919,6 +1922,10 @@ margin: 0;
   display: flex;
   border: none;
   background-color:transparent;
+  background-image: url("../images/catalog/select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1930,7 +1937,7 @@ margin: 0;
 }
 
 .select-control:focus-visible {
-  border: 3px solid #af4fff;
+  outline: 3px solid #af4fff;
 }
 
 .product-list {
@@ -2029,6 +2036,10 @@ margin: 0;
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  opacity: 1;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {

@@ -6,61 +6,64 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="logo-device-header" href="#">
-      <img class="logo-device-image" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс.">
-    </a>
+   <header class="page-header">
+     <a class="logo-device-header" href="#">
+       <img class="logo-device-image" src="images/logo.svg" width="145" height="36" alt="Логотип сайта Девайс.">
+     </a>
 
-    <div class="header-container">
-    <div class="header-search-custom">
-    <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
-      <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
-      <input class="field" placeholder="Поиск по сайту" name="search" type="search" id="search">
-      <span class="outline"></span>
-     <button class="search" type="submit"><span class="search-button">Найти</span></button>
-    </form>
+     <nav class="header-container">
+      <div class="header-search-custom">
+       <form class="site-search" action="https://echo.htmlacademy.ru/" method="get">
+        <label for="search" class="visually-hidden">Поле поиска по сайту.</label>
+        <input class="field" placeholder="Поиск по сайту" name="search" type="search" id="search">
+        <span class="outline"></span>
+        <button class="search" type="submit">
+         <span class="search-button">Найти</span>
+        </button>
+       </form>
 
-   <nav class="navigation-custom">
-   <ul class="custom-menu">
-    <li class="navigation-custom-item">
-      <a class="login-user" href="#">Войти</a>
-    </li>
-
-   </ul>
-
-   <ul class="custom-menu">
-    <li class="navigation-custom-item">
-      <a class="compare-button" href="#">Сравнить</a>
-    </li>
-
-    <li class="navigation-custom-item navigation-custom-item-popover">
-      <a class="cart-button " href="#">Корзина</a>
-      <div class="popover popover-cart">
-        <h2 class="visually-hidden">Корзина пользователя.</h2>
-        <div class="popover-content">
-        <ul class="cart-items-list">
-        <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
-          <p class="cart-item-title">Любительская селфи-палка</p>
-          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
-        </li>
-        <li class="cart-item"><img class="slider-image-cart" src="images/catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
-          <p class="cart-item-title">Профессиональная селфи-палка</p>
-          <button class="delete-cart" type="button"><span class="visually-hidden">Кнопка удалить из корзины.</span></button>
-        </li>
-        <div class="unification-cart">
-        <span class="quantity-cart">Товаров: 2</span>
-        <span class="amount-cart">Сумма: 2000 ₽</span>
-        </div>
+       <nav class="navigation-custom">
+        <ul class="custom-menu">
+         <li class="navigation-custom-item">
+          <a class="login-user" href="#">Войти</a>
+         </li>
         </ul>
-        <a class="open-cart" href="#">Открыть корзину</a>
-        </div>
+        <ul class="custom-menu">
+         <li class="navigation-custom-item">
+          <a class="compare-button" href="#">Сравнить</a>
+         </li>
+         <li class="navigation-custom-item navigation-custom-item-popover">
+          <a class="cart-button " href="#">Корзина</a>
+          <div class="popover popover-cart">
+           <h2 class="visually-hidden">Корзина пользователя.</h2>
+           <div class="popover-content">
+            <ul class="cart-items-list">
+             <li class="cart-item">
+              <img class="slider-image-cart" src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка.">
+              <p class="cart-item-title">Любительская селфи-палка</p>
+              <button class="delete-cart" type="button">
+               <span class="visually-hidden">Кнопка удалить из корзины.</span>
+              </button>
+             </li>
+             <li class="cart-item">
+               <img class="slider-image-cart" src="images/catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка.">
+               <p class="cart-item-title">Профессиональная селфи-палка</p>
+               <button class="delete-cart" type="button">
+                <span class="visually-hidden">Кнопка удалить из корзины.</span>
+               </button>
+             </li>
+             <p class="unification-cart">
+              <span class="quantity-cart">Товаров: 2</span>
+              <span class="amount-cart">Сумма: 2000 ₽</span>
+             </p>
+            </ul>
+            <a class="open-cart" href="#">Открыть корзину</a>
+           </div>
+          </div>
+         </li>
+        </ul>
       </div>
-      </li>
-      </div>
-
-    </ul>
-   </nav>
-      </div>
+    </nav>
 
       <nav class="navigation-item">
         <ul class="navigation-list">
@@ -102,23 +105,22 @@
         </ul>
         </nav>
    </div>
-    </header>
+   </header>
 
     <main class="main-container main-index">
       <div class="page-container">
-      <h1 class="visually-hidden">Интернет-магазин "Device".</h1>
+       <h1 class="visually-hidden">Интернет-магазин "Device".</h1>
 
-      <section class="slide">
-        <h2 class="visually-hidden">Слайдер с популярными товарами.</h2>
-      <div class="goods-slide">
-
-      <img class="slider-image" src="images/sliders/quadrocopter.png" width="560" height="560" alt="Квадрокоптер.">
-       <div class="slide-container">
+       <section class="slide">
+       <h2 class="visually-hidden">Слайдер с популярными товарами.</h2>
+       <div class="goods-slide">
+        <img class="slider-image" src="images/sliders/quadrocopter.png" width="560" height="560" alt="Квадрокоптер.">
+        <div class="slide-container">
         <span class="slide-number">01</span>
         <h2 class="heading">Порхает как бабочка, жалит как пчела!</h2>
-      <p class="subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-      </p>
-      <a class="button button-more" href="#">Подробнее</a>
+        <p class="subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+        </p>
+        <a class="button button-more" href="#">Подробнее</a>
         <ul class="dignity">
           <li class="specifications">800 м
             <span class="specifications-text">Дальность полета</span>
@@ -126,9 +128,9 @@
           <li class="specifications">50 м
             <span class="specifications-text">Радиус поражения</span>
           </li>
-        </ul>
-      </div>
-      </div>
+         </ul>
+         </div>
+       </div>
 
       <div class="goods-slide invisible">
 
@@ -382,11 +384,12 @@
               <input class="modal-form-field modal-form-field-name" type="text" id="entering-name" name="entering-name" placeholder="Введите имя">
             </p>
 
-            <p class="field-group field-group-error"><!--Чтобы ивидеть класс ошибки, добавьте input class="error-modal-email"-->
+            <p class="field-group"><!--Чтобы ивидеть класс ошибки, добавьте input class="error-modal-email"-->
               <label class="modal-sabtitle" for="entering-mail">Ваш e-mail:</label>
               <input class="modal-form-field modal-form-field-email error-modal-email" type="email" id="entering-mail" name="entering-mail" placeholder="Ваш e-mail" value="почта">
-            </p>
               <span class="input-error-signature">Забавный у вас адрес</span>
+            </p>
+
           </div>
           <div class="goods-modal">
 
