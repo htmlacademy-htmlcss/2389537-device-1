@@ -344,7 +344,7 @@ body {
 }
 
 .navigation-link {
-  display: flex;
+  min-height: 50px;
   color: inherit;
   text-decoration: inherit;
   font-family: "Raleway", sans-serif;
@@ -352,7 +352,6 @@ body {
   line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  align-items: center;
   outline-offset: -2px;
 }
 
@@ -374,6 +373,11 @@ body {
 
 .navigation-link:active .plus {
   opacity: 1;
+}
+
+.navigation-link-catalog {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-link-catalog:active + .header-categories-list {
@@ -502,6 +506,7 @@ body {
 .button-more {
   width: 225px;
   margin-bottom: 50px;
+  padding: 10px 6px 10px 1px;
 }
 
 .slide-number {
@@ -606,6 +611,7 @@ body {
   margin-right: 20px;
   padding: 0;
   border-radius: 50%;
+  border-color: #000000;
   border-style: solid;
   background-color: #ffffff;
   cursor: pointer;
@@ -626,10 +632,12 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
   left: -3.5px;
   top: -3.5px;
+  border: none;
 }
+
 
 .slider-pagination-button-current {
   background-color: #000000;
@@ -839,7 +847,7 @@ body {
 
 .advantages-more {
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, #ffffff 102px, #f0f0f0 102px);
+  background-image: linear-gradient(to bottom, #ffffff 114px, #f0f0f0 102px);
 }
 
 .advantages-more-container {
@@ -855,7 +863,7 @@ body {
 .order-button {
   position: relative;
   cursor: pointer;
-  padding: 40px 135px 36px;
+  padding: 40px 135px 36px 139px;
   display: block;
   width: 1160px;
   margin: 0 auto;
@@ -1157,6 +1165,7 @@ body {
 .field-email:focus-visible {
   background-color: #bcbcbc;
   outline: 2px solid #af4fff;
+  outline-offset: -2px;
 }
 
 .field-email:active {
@@ -1174,7 +1183,7 @@ body {
 }
 
 .button-newsletter {
-  padding: 15px 35px;
+  padding: 12px 32px 13px 38px;
   border: 2px solid #c4c4c4;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
@@ -1219,17 +1228,17 @@ body {
 
 .footer-container {
   width: 1160px;
-  row-gap: 40px;
-  column-gap: 124px;
+  row-gap: 30px;
+  column-gap: 40px;
   padding: 62px 0 61px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 239px auto 174px;
+  grid-template-columns: 239px auto 239px;
 }
 
 .logo-device-link {
   width: 145px;
-  height: 33px;
+  height: 40px;
   grid-column: 1/-1;
 }
 
@@ -1261,8 +1270,10 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 35px;
+  gap: 33px;
   list-style-type: none;
+  padding-top: 5px;
+  padding-left: 3px;
 }
 
 .advantages-link {
@@ -1289,11 +1300,13 @@ body {
 }
 
 .footer-contacts-address-phone {
+  justify-self: flex-end;
   color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-decoration: underline;
+  padding-top: 6px;
 }
 
 .footer-contacts-address-phone:hover {
@@ -1314,6 +1327,7 @@ body {
   width: 80px;
   height: 7px;
   align-self: center;
+  margin-top: 19px;
 }
 
 .footer-social {
@@ -1324,6 +1338,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  padding-top: 19px;
 }
 
 .footer-social-item {
@@ -1405,6 +1420,7 @@ body {
   justify-self: end;
   margin: 0;
   padding: 0;
+  padding-top: 21px;
 }
 
 .htmlacademy-link {
@@ -1420,7 +1436,7 @@ body {
   height: 33px;
   background-color: #ffc700;
   -webkit-mask: url("../images/html.svg");
-  mask: url("../images/html.svg");
+  mask-image: url("../images/html.svg");
 }
 
 .htmlacademy-link:hover::before {
@@ -1429,8 +1445,8 @@ body {
   width: 115px;
   height: 33px;
   background-color: #ffffff;
-  -webkit-mask: url("../images/html.svg");
-  mask: url("../images/html.svg");
+  -webkit-mask: url("../images/html.svg") no-repeat center;
+  mask: url("../images/html.svg") no-repeat center;
 }
 
 .htmlacademy-link:focus-visible {
@@ -1473,21 +1489,21 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 61px 70px;
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .modal-case {
-  width: 940px;
+  width: 920px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 85px;
-  right: 80px;
+  top: 73px;
+  right: 72px;
   width: 26px;
   height: 26px;
   background-color: #ffffff;
@@ -1516,7 +1532,7 @@ body {
 }
 
 .modal-form-field {
-  height: 60px;
+  height: 59px;
   background-color: #f0f0f0;
   border: none;
   padding: 20px;
@@ -1571,10 +1587,10 @@ body {
   width: 360px;
   background-image: url("../images/icons/email.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
 }
 
-.modal-form-field-prodact {
+.modal-form-field-product {
   width: 540px;
 }
 
@@ -1598,8 +1614,6 @@ body {
 
 .quantity-inner {
   display: flex;
-  grid-template-columns: 60px 60px 60px 60px;
-  grid-template-rows: 60px 60px;
   position: relative;
 }
 
@@ -1896,26 +1910,29 @@ body {
 
 .catalog-filter-label {
   display: flex;
-  color: #000000;
+  color: #bebebe;
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  opacity: 0.3;
   position: absolute;
   top: 10px;
 }
 
 .filter-label-from {
-  left: -14px;
+  left: -11px;
   top: 14px;
 }
 
 .filter-label-to {
   left: 93px;
-  top: 14;
+  top: 14px;
+}
+
+.radio-item {
+  margin-top: 20px;
 }
 
 .range-input {
@@ -1926,6 +1943,7 @@ body {
   border: none;
   appearance: textfield;
   width: 70px;
+  color: #bebebe;
 }
 
 .range-input:focus-visible {
@@ -2051,9 +2069,8 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #000000;
+  border: 2px solid #bcbcbc;
   border-radius: 3px;
-  opacity: 0.3;
 }
 
 .control-label {
@@ -2067,7 +2084,7 @@ body {
   background-image: url("../images/catalog/mark-filtr.svg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  border-color: #000000;
 }
 
 .control:hover .control-mark {
@@ -2101,7 +2118,7 @@ body {
 .button-show {
   width: 220px;
   background-image: linear-gradient(to bottom, #ebebeb 38%, #ffe17f 38% 57%, #ebebeb 57%);
-  padding: 16px 10px;
+  padding: 14px 10px;
 }
 
 .sorting {
@@ -2126,31 +2143,42 @@ body {
   display: flex;
 }
 
-.button-select {
+.button-select::before {
+  content: "";
   display: block;
-  background-image: url("../images/catalog/sort-select.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.2;
   width: 30px;
   height: 30px;
-  outline: none;
+  background-color: #bebebe;
+  -webkit-mask: url("../images/catalog/sort-select.svg") no-repeat center;
+  mask: url("../images/catalog/sort-select.svg") no-repeat center;
+}
+
+.button-select:hover::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #666666;
+  -webkit-mask: url("../images/catalog/sort-select.svg") no-repeat center;
+  mask: url("../images/catalog/sort-select.svg") no-repeat center;
+}
+
+.button-select:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 .button-select-down {
   transform: rotate(180deg);
 }
 
-.button-select:hover {
-  opacity: 0.5;
-}
-
-.button-select:focus-visible {
-  border: 2px solid #af4fff;
-}
-
-.button-select:active {
-  opacity: 1;
+.button-select:active::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  -webkit-mask: url("../images/catalog/sort-select.svg");
+  mask: url("../images/catalog/sort-select.svg");
 }
 
 .product-container {
@@ -2180,7 +2208,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: -2.5px;
+  letter-spacing: -2.4px;
 }
 
 .product-card-link:hover img {
@@ -2275,7 +2303,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 21px;
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.3px;
 }
 
 .pagination-catalog {
@@ -2288,8 +2316,8 @@ body {
   display: block;
   width: 760px;
   margin: 0 auto;
-  margin-bottom: 39px;
-  padding: 15px 39px;
+  margin-bottom: 44px;
+  padding: 15px 39px 15px 43px;
   font-family: "Raleway", sans-serif;
   background-color: #ffffff;
   text-align: center;
@@ -2313,18 +2341,12 @@ body {
 }
 
 .pagination-numbers {
-  gap: 17px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   background-color: #ebebeb;
   list-style-type: none;
-}
-
-.pagination-item-numbers {
-  opacity: 0.3;
 }
 
 .pagination-item-numbers:first-child {
@@ -2332,12 +2354,13 @@ body {
 }
 
 .pagination {
-  padding: 30px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   margin: 0;
   background-color: #ebebeb;
   list-style-type: none;
+  align-items: center;
 }
 
 .pagination-disabled {
@@ -2350,26 +2373,29 @@ body {
   opacity: 0.3;
 }
 
-.pagination-current {
-  color: #444444;
-  font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .pagination-link {
-  padding: 17px;
-  color: #444444;
+  display: block;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 10px;
   background-color: #ebebeb;
   text-align: center;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  color: #dcdcdc;
+}
+
+.pagination-current {
+  color: #bcbcbc;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .pagination-link:hover {
-  opacity: 0.3;
+  color: #bcbcbc;
 }
 
 .pagination-link:active {
@@ -2378,10 +2404,11 @@ body {
 
 .pagination-link:focus-visible {
   outline: 2px solid #af4fff;
+  outline-offset: -2px;
 }
 
 .pagination-direction {
-  padding: 25px;
+  padding: 25px 22px 25px 25px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -2471,20 +2498,20 @@ body {
   margin: 0 20px 0 20px;
 }
 
-.cart-prodact-popover {
+.cart-product-popover {
   text-decoration: none;
   display: flex;
 }
 
-.cart-prodact-popover:hover {
+.cart-product-popover:hover {
   opacity: 0.6;
 }
 
-.cart-prodact-popover:focus-visible {
+.cart-product-popover:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.cart-prodact-popover:active {
+.cart-product-popover:active {
   opacity: 0.3;
 }
 
