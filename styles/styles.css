@@ -2287,7 +2287,10 @@ body {
   line-height: 21px;
   letter-spacing: 2.8px;
   text-transform: uppercase;
-  display: none;
+}
+
+.new:hover::after {
+  opacity: 0.6;
 }
 
 .product-card-title {
