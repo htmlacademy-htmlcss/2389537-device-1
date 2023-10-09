@@ -877,6 +877,7 @@ body {
   line-height: 24px;
   letter-spacing: 4px;
   text-transform: uppercase;
+  background-color: #f0f0f0;
 }
 
 .order-button::before {
@@ -908,6 +909,10 @@ body {
   position: absolute;
   right: 42px;
   top: 30px;
+}
+
+.order-button:hover {
+  background-color: #f0f0f0;
 }
 
 .order-button:hover::after {
@@ -1193,6 +1198,7 @@ body {
   line-height: 21px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .button-newsletter:hover {
@@ -1596,6 +1602,7 @@ body {
 
 .modal-form-field-quantity {
   width: 60px;
+  height: 60px;
   text-align: center;
   padding-right: 10px;
   padding-left: 10px;
@@ -1628,10 +1635,12 @@ body {
   background-image: url("../images/modal-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f0f0f0;
 }
 
 .button-minus:hover {
   opacity: 0.6;
+
 }
 
 .button-minus:focus-visible {
@@ -1649,6 +1658,7 @@ body {
   background-image: url("../images/modal-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f0f0f0;
 }
 
 .button-plus:hover {
@@ -2296,6 +2306,13 @@ body {
 .product-card-title {
   margin: 0;
   padding: 0;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
 }
 
 .product-card-price {
